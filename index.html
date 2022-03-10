@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My-Giro</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- menu -->
+        <nav class="head">
+            <img src="logo1.png" class="logo">
+            <ul class="menu">
+                <li><a href="/">Преимущества</a></li>
+                <li><a href="/">Особенности</a></li>
+                <li><a href="/">Товары</a></li>
+                <li><a href="/">Консультанты</a></li>
+                <li><a href="/">Бренды</a></li>
+                <li><a href="/">Дополнительно</a></li>
+                <li><a href="/">О нас</a></li>
+            </ul>
+        </nav>
+
+        <div class="benefits">
+            <div class="align">
+                <button class="button" onclick="prev()"><</button>
+                <button class="button" onclick="next()">></button>
+            </div>
+            <div class="align">
+                <article class="text" id="text"></article>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

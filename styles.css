@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.head{
+    background-color: darkcyan;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu li{
+    font-size: 16px;
+    padding: 20px;
+    transform: skew(20deg);
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Montserrat';
+    background-color: rgb(119,221,231);
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    transition: font-size;
+    transition-duration: 0.25s;
+}
+
+.menu a:hover{
+    font-size: 18px;
+}
+
+
+.benefits{
+    align-items: center;
+    flex-direction: column-reverse;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px
+}
+
+.button{
+    display: flex;
+    align-self: flex-end;
+}
+
+.text{
+    display: flex;
+    align-self: flex-end;
+    border: 2px solid black;
+}
+
+.align{
+    display: flex;
+}
