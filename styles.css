@@ -1,68 +1,99 @@
+/* menu/body */
 body{
-    margin: 0;
-    padding: 0;
+    font-family: 'Montserrat';
 }
 
-.logo{
-    width: 100px;
-    height: 100px;
-}
-
-.head{
-    background-color: darkcyan;
+nav, .head-buttons{
     display: flex;
     justify-content: space-between;
 }
 
-.menu{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
+.title-head{
+    font-size: 36px;
+    margin: 37px 50px;
 }
 
-.menu li{
-    font-size: 16px;
-    padding: 20px;
-    transform: skew(20deg);
-    margin-right: 20px;
-    text-align: center;
-    font-family: 'Montserrat';
-    background-color: rgb(119,221,231);
-
-}
-
-.menu a{
-    text-decoration: none;
-    color: black;
-    transition: font-size;
-    transition-duration: 0.25s;
-}
-
-.menu a:hover{
+.head-buttons li{
     font-size: 18px;
+    line-height: 38px;
+    padding: 25px 50px;
+    background-color: #35B7E0;
+    margin: 15px 50px;
+    border-radius: 50px;
+    color: white;
 }
 
+.my{
+    color:#66CBD1;
+}
 
-.benefits{
+.menu{
+    background-color: #1995AD;
+}
+
+/* sections */
+
+.section-1, .section-2{
+    height: 958px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* section-1 */
+.section-1{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column-reverse;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    height: 400px
+    justify-content: center;
+    background-image: url('section1.jpg');
 }
 
-.button{
-    display: flex;
-    align-self: flex-end;
+.body-title{
+    font-size: 72px;
+    line-height: 87.77px;
 }
 
-.text{
-    display: flex;
-    align-self: flex-end;
-    border: 2px solid black;
+.product-list{
+    margin-top: 35px;
+    text-align: center;
+    color: #1995AD;
+    font-size: 24px;
+    line-height: 29.26px;
 }
 
-.align{
+.to-products{
+    margin-top: 35px;
+    font-size: 36px;
+    line-height: 51px;
+    background-color: #1995AD;
+    text-decoration: none;
+    padding: 39px 90px;
+    border-radius: 40px;
+}
+
+/* section-2 */
+
+.section-2{
+    background-image: url('section2.jpg');
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.benefits, .tips{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 674px;
+    width: 674px;
+    background-color: #1995AD;
+    border-radius: 100%;
+}
+
+.sec-2-title{
+    font-size: 36px;
+    line-height: 51px;
 }
