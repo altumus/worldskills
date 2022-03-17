@@ -86,7 +86,7 @@ nav, .head-buttons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 674px;
     width: 674px;
     background-color: #1995AD;
@@ -94,6 +94,36 @@ nav, .head-buttons{
 }
 
 .sec-2-title{
+    font-size: 42px;
+    line-height: 51px;
+    max-width: 50%;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.sec-2-article{
     font-size: 36px;
     line-height: 51px;
+    max-width: 80%;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+
+.selectors{
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.selectors div{
+    width: 30%;
+    height: 3px;
+    background-color: white;
+}
+
+#ben1:active{
+    display: none;
 }
