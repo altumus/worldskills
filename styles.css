@@ -3,9 +3,13 @@ body{
     font-family: 'Montserrat';
 }
 
-nav, .head-buttons{
+.menu-main, .head-buttons{
     display: flex;
     justify-content: space-between;
+}
+
+.menu-main, .menu{
+    background-color: #1995AD;
 }
 
 .title-head{
@@ -27,13 +31,17 @@ nav, .head-buttons{
     color:#66CBD1;
 }
 
-.menu{
-    background-color: #1995AD;
+.title-section{
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
 }
 
 /* sections */
 
-.section-1, .section-2{
+.section-1, .section-2, .products{
     height: 958px;
     background-position: center;
     background-size: cover;
@@ -124,6 +132,51 @@ nav, .head-buttons{
     background-color: white;
 }
 
-#ben1:active{
-    display: none;
+
+/* products-section */
+.products{
+    background-image: url('1613301702_130-p-sinii-fon-abstraktsiya-geometriya-189.jpg');
+    display: flex;
+    justify-content: center;
+}
+
+.categories, .menu{
+    display: flex;
+}
+
+.menu{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.categories li{
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.categories li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.products-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 60%;
+    text-align: center;
+}
+
+.product-list li{
+    margin-left: 40px;
+}
+
+.img{
+    height: 300px;
+    width: 300px;
+    background-image: url('0b242dd5a6f3b60d9c07a5d96a2bc449_2_XL.jpg');
+    background-size: contain;
+    border-radius: 20px;
 }
