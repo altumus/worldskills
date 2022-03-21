@@ -26,7 +26,7 @@
         </div>
 
         <!-- about product -->
-        <div class="section about">
+        <div class="section about-products">
             <h3 class="section-title">НАШИ БЛЮДА</h3>
             <ul class="products">
                 <li>
@@ -58,20 +58,174 @@
             <nav class="product-menu">
                 <ul>
                     <li>
-                        <a href="#">ВСЁ</a>
+                        <a href="#" id="all" onclick="products(event)">ВСЁ</a>
                     </li>
                     <li>
-                        <a href="#">СУШИ</a>
+                        <a href="#" id="sushi" onclick="products(event)">СУШИ</a>
                     </li>
                     <li>
-                        <a href="#">РОЛЛЫ</a>
+                        <a href="#" id="rolls" onclick="products(event)">РОЛЛЫ</a>
                     </li>
                     <li>
-                        <a href="#">ВОК</a>
+                        <a href="#" id="wok" onclick="products(event)">ВОК</a>
                     </li>
                 </ul>
             </nav>
-            <ul class="products"></ul>
+
+            <!-- all -->
+            <ul class="products" id="only-all">
+                <li>
+                    <div class="product-img wok"></div>
+                    <h3 class="product-name">ВОК</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img sushi"></div>
+                    <h3 class="product-name">СУШИ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img rolls"></div>
+                    <h3 class="product-name">РОЛЛЫ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- wok -->
+            <ul class="products" id="only-wok">
+                <li>
+                    <div class="product-img wok"></div>
+                    <h3 class="product-name">ВОК</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img wok"></div>
+                    <h3 class="product-name">ВОК</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img wok"></div>
+                    <h3 class="product-name">ВОК</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- sushi -->
+            <ul class="products" id="only-sushi">
+                <li>
+                    <div class="product-img sushi"></div>
+                    <h3 class="product-name">СУШИ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img sushi"></div>
+                    <h3 class="product-name">СУШИ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img sushi"></div>
+                    <h3 class="product-name">СУШИ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- rolls -->
+            <ul class="products" id="only-rolls">
+                <li>
+                    <div class="product-img rolls"></div>
+                    <h3 class="product-name">РОЛЛЫ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img rolls"></div>
+                    <h3 class="product-name">РОЛЛЫ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="product-img rolls"></div>
+                    <h3 class="product-name">РОЛЛЫ</h3>
+                    <div class="order-buy">
+                        <a href="#">Купить</a>
+                    </div>
+                </li>
+            </ul>
         </div>
+
+        <!-- cooks -->
+        <div class="section cook">
+            <h3 class="section-title">НАШИ ПОВАРА</h3>
+            <ul class="cooks">
+                <li>
+                    <div class="cook-img alex"></div>
+                    <h3 class="cook-name">АЛЕКСАНДР</h3>
+                    <span class="cook-desc">Шеф-повар</span>
+                </li>
+                <li>
+                    <div class="cook-img juan"></div>
+                    <h3 class="cook-name">ЖУАНЬ</h3>
+                    <span class="cook-desc">Су-шеф</span>
+                </li>
+                <li>
+                    <div class="cook-img huan"></div>
+                    <h3 class="cook-name">ХУАН</h3>
+                    <span class="cook-desc">Главный сушист</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- about us -->
+        <div class="section about">
+            <h3 class="section-title">О НАС</h3>
+            <div class="info">
+                <div class="about-text">
+                    <h3 class="about-title">ПОЧЕМУ МЫ?</h3>
+                    <article>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>Lorem Ipsum has been the industry's standard dummy text 
+                            ever since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it to make a
+                             type specimen book.
+                        </p>
+                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </article>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-title">СПЕЦИАЛЬНЫЕ <br> ПРЕДЛОЖЕНИЯ</h3>
+                    <article>
+                        <p>Хотите получать больше специальных предложений?</p>
+                        <p>Подпишитесь на нашу рассылку !</p>
+                    </article>
+                    <form class="form">
+                        <input type="text" placeholder="Ваше имя"></input>
+                        <input type="text" placeholder="Ваш email"></input>
+                        <button type="submit">ПОДПИСАТЬСЯ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <script src="js/sripts.js"></script>
     </body>
 </html>
